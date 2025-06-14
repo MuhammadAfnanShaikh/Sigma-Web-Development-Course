@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* element selector */
+        div {
+            background-color: red;
+        }
+/* class selectors */
+        .yellow {
+            color: yellow;
+        }
+/* id selectors */
+        #green {
+            background-color: green;
+        }
+/* /child selectors */
+         div>p {
+            color: #ffffff;
+            background-color: aqua;
+        }
+/* descendant selectors */
+      
+div p{
+    color: #ffffff;
+            background-color: aqua;
+}
+/* universal selectors */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* pseudo selectors
+ */
+a:visited
+{
+    color: yellow;
+}
+a:link
+{
+    color: red;
+}
+a:active{
+    color: green;
+}
+a:hover{
+    background-color: blue;
+}
+p:first-child{
+    background-color: blue;
+}
+</style>
+
+</head>
+
+<body>
+
+</body>
+<main>
+    <p>1st</p>
+    <p>2nd</p>
+</main>
+<div class="yellow">
+     <p>1st</p>
+    <p>2nd</p>
+    i am a div</div>
+<div id="green">2nd</div>
+<div><a href="https://www.google.com">a</a>
+    <article>
+        <p>class</p>
+    </article>
+</div>
+<a href="https://www.youtube.com">google</a>
+<a href="https://www.facebook.com">google2</a>
+</html>
