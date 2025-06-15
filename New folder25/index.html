@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* nav ul li {
+        list-style: none;
+        /* list-style: devanagari; */
+        /* list-style: devnagari; */
+        /* list-style-type: upper-latin; */
+        /* background-color: yellow; */
+        /* list-style-position: inside; */
+        /* border: 2px black solid; */
+        /* list-style-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAsAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAADBAACBQEHBv/EADsQAAIBAgMECQIFAwIHAAAAAAECAwARBBIhBRMxkRQiMkFRUmFxgQYzQnKhwfAjYrGS4QcVFjRDgtH/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAQID/8QAGREBAQEBAQEAAAAAAAAAAAAAAAERAhIh/9oADAMBAAIRAxEAPwD3Cl8UesvtQ94/nPOiwDeZs/WtbjQAHaHvT16G8SBTZRS28e3aPOgJiO2Py0NO2v5hR4VEmYuMxv31aSNFRmCgEAkGgJelcRrIbdwqu8fztzo0Kh1u/WN+JoAxfdX3pyhyoqoSoAPiKXEj+Y60HZ/ut8VIPvLRYVDxhmFySdT712VFRCyAAjvFAWk5SN43vUEj+c86PEivGrMoJI40AsMf6vxTRIoMyhFDILG/EUHePftHnQck7be5omH7Z/LRY4kKKSoJIFzVJlEYBj6pJsSKA9xSJ437r1beP5250ysaEXKi5FALC9pvimL0CcbvLk6t/ChZ38550F+jt6czXUO40Ydrwpg8KXxXaX2NBZp1K2sddKH0d7fh5mhjiPen6BdW3OjjU66V1plcFNQW051TEdtfy0NO2v5hQX6O/pzNXRtyMj8eOlHFK4j7nwKC7SiQZACCeFUGHfvy8zVYvur704KACuIlKEG48OdRpBKuRQbnxoc/3m/ndUg+8tBbcP8A28zVllEa5CDddNKOaTl+63vQEd99ZFGvHWq9Hfuy8zUw/wB34po0ARMEGUg3XSqu2/6qXuNddKE/bb8xomG+4fy0E6O/pzNXE6qLEG400o9IN2j70BnO/PU4rxvXOjv6czXcN2m9hTNAjmbztzouHGfNn63C19a50dvEVZf6BIOt/CgIyKFNlUadwpTM1u23M0dpwdMp10vVejtbiKC8ADqcwDa94vVpEVUYqqggHgKorbm6kXvrpUaYOCliMwtegDmbztzo8Chku3WN+/WqbhvEVmYv6j2bs2aTCzyu00YzMsaFvig2JUVYyVVQfEClszeZudZkv1Vs0LGsxlhMvDeJa3qfAVqRIJUDxSI6EaMpuDQHhAaMFgCfEj1qTKqxkqoB8QLVVX3QyEcOJrCk+q8IZWhlikVC5VJB1gbeg1oNcM3mbnTEKK0algCT3kVgQfUmxZpBGNpRK5NrSAoB8kWrbixCbtchDp3OhuD80F5wFTq9U37tKBmbztzoskm9GUDLbUluArMba+zlxAhOLjzeaxy/6uFBsIilFJVSSPChzjIoydXXu0qsWJUxqUs6W6rKQQw8Qa6zb/qjqkG+tALM3nbmaaVFIF1B07xQejt4iricDTKdO+g5iBky5OrfjbSg5m87f6jRWJnICi2XxrnR28RQNHhS2KtmX2NBufE0fDdbNfXwvQAW1x70/VHUZToOFJ9a3Ek0BcT2x+WlcRiYcJEZ5msq66d/tQcRtaGCNt3Z3vYM2i/rXyW0NpNJmbEOpJkCktfvI4elZtWRt4j6klxMww+GiEaMhZ2vmZRw7uFfC4/eSRzNGzI7MXWXicnG1+FyLUzg3eHakgcurSRdWIgHq8ePC9s3OgSLImFxEMyNllF0uD2Te2v84VJ9bzF8dh+kYRI3CkRheLHgbAhtaNs7aeIwOMZ8JPumjUs6nVJAe4i+raakUDZszSOkMhBRAoAuQGIHf+lORwQucpdUMkb9YDsGx19uFUauF+uo8Xh5FxMKxYl1sjRm6ajTjwr5HHSyTY4qjZkU/hA6vjQsfs9cG0d3ugNrEAldOBPyOVKSbQMOK3UzKkci9UooFxxOvjxqVMGxORprvJmkcEhdLHXgLf4omytq4zZD7zAy5LG7ROCyEX4MPjiNaG2LUwjd6qrEg8Se4f5rOnx0cKF2uGZuqigXI05VFehYz6gk2phRiEUxwMLJGr/i4EkjiL1mYXFSSNcXCAWdhpc3N6+X+mMfNjNoy4KKUJh8meRhY5ddLHuvryrelkaDdjCuyx2IPAkEjQm/E699Fxo4DbU2xJxBEHkgJAaJyTa/h5a9IwbpKd5EyshXRlNwa8bZ2Z442ZtAUcLpZhxPP/NMQ4vHYbEbzBYmXDiJgE3bnKxtr1TofY1ZWbHs9ItbMfevldmfWMLJHFtZdzKbAzR6x+571/UV9pEUeNWWxUqCCNQa1rGYHhbZm+KZpfEi2W2h9KBr4mqD9H/v/SuC+H/uv8UweFL4rtL7Gg7vy2mW19L3vWZtmfokQizAmRT6G3fanF4j3rK+tI1OBhlKk5ZMlwL2uP8Aa3zUqxhTSu5kBFgVDIw8vf8ANZaPeJrCxuHynvA4D9KawamNYg5u6jLbhbTUUlj4nkmawbtDhqGHC1c66QOMH/mLTLdpFJOupNhYC36VzFNvcPJMsh7YZw8lygI7h38Dp3fFFSJosXJLdWJXqgaWJ468PChx6Y1onVGR1crc8Sp0F/YtSVbC8IKYhWaO6zjKEtoq3AF/Y8a04kKOxIVszkEsNWFu7lSsyXZo5VzDJax4dY6++tuVWglHXW+fIyqG42vw158q2yBtTcPK0SQ5y9t7ID2SBofX/evmsem8TdjLnAJS34G1sf1t81rbWxO42kd2wWVgN5b1uKy8aF3Wi6oPDVb61B89gNoSrmM6q5L2uw6t/ACmtqbSL4VyZ1jEajNDl0IP6HlSOLy4XGRBCCJ7O2tgCdD8VzFYVsZCV3xDC5AIvl8B/mo1G19MwHAqXkyRSTWLZF0QA3A/a1++tc4rrOIy8WVs27JB7+86eP7V8tgdpSxSETtldRlI4j3tz/gpuXGRRyKz5WU265NyddauI2Z8erFVw8dlUKGfQEWGgtb4osM0rFhI7dYcDxPHX+caR2fh59oqssIjVLEXkBHVtoQf4KZkjkhlIxDqZMpAsxANUGDst43RcwW5YHsi9rX/AGr0v6C2lNPsIQzqX6LIYUkItnUAEH3F7fFfC/TWyMbtrFJuYTHhz257EotuNj3m/dXqOGgjwuHiw8S2jiXKB/OdWMdHCTiNBZSvreu9HPn/AErmF4t8UzVZZ4GtMYXTN8V3ow836VX/ALc2HWzfFAd+yfakGVGUqygqRqLcaYM7HSwF670YWtm/SgxZPpzDzQuIHaFi1x3gd9vavmtu7LxmBDviIhubjLMhufn5/SvvixhOUa31qrSb0ZGUWbTXWs3nWp08zxCpJFDk0fjxuD3fsKXSSFcQsDneSSAmPqnXx0/nfXo+K+nNn4q5eII3mi6pH7fpWVL9F7G6YMRMmJmnSxRziXXL/wCqkKfkGs+K16j5GYmSeV2K7oJck/h1JGnhcUtspMQgbE4lgWlsUjUZeHj3eJrY2jgpdn7UbDxC8BF4ww4qRprwNj+9ZSMyYiTBurCNLZGP4vW/ua1QhtKOPEPJic4J4pb3sdazJpGVSXQuT1Tfw8PWmsQQsxjmMgYHqgAi4HG3OnPpLY8m2/qGFHJMEJWaR7XGUWsPcnTnUK+q2D9EYKT6fGE+oMJFiWkk3qKbhobgAWYG4Ogvas4/8IMMca0uH2viY8HJbqsitKoH4c3Aj1Iv716acPc3zfpVQ5j6gAIXS5rWMbXx0n0n9H/TmyJ8Pj4Y5UxLXkbFneSSEcAumlvBQK+BxWwtgYjai4vZOzHw8aqMqSuzqT5iCSB7fvWu+Fkxk8mO2nI02KY/1JHbQAnsqO4CjMvRwsZChyD2BwA0vWdbkLiKWKEsxBAFy9uyaLsTE4f/AKgwaYhIponO7JdQVGbgfe4HM1JmE7NGcyqB7Zrd9I4LDtPtTCxRL1nnQaHQjMD+1Qr1ywVQqqFCiwUDQU8nZHtQmw9ySG4+lV37LplBtpXRzdxWuWl7UcEzmx6uXwq3Rv7/ANKAudfMOdAxHWZcovYcRQLj0pjCcG+KAIBBBINr05nXzDnUfsn2pG4txoDT9Zxl10tpVEBDrcEa3o+G7Le9Xl+0/wCU0Hc6+Yc6Wmu0hK66e9CuPSmsN9v5NBibewLYrAu6K5lhUsi+PeR7m1edbRmklbKhRuIe7MtiCDwA09QbV7FN9pqyJdl7OkxfS5MHA2IIsXKDX38fc1Malx5ZhMFi9qYxjhcNLOzHLe10T3PcRxr076Y2OmxMIkJKvMxzTShbZjb/AAK2cMqrCoRVA8FFhVsR9k/FMS3V86+Yc6UcEyMQCQTzqg7qcg+yvtVR5ztfZOMwO0JThMJPLh2JkjaNS2QHiPisrfyrIq4iBlKCyiUFDwPj716xiex80pLHFOuSaOOVfLIoYcjWca9PKZWllfMt1sltGrc/4f7OfF7T/wCYOmXDYXRD5pD/APBe/uK+zf6a2NiEUvs6EXH/AIwU/wAU1Fg8Ns/BxYbBxLFCh0VRSRb0dzr5hzpMhiSbHjVbj0p5OyPYVpgDD9Utm0v40fOvmHOg4r8P88KXuPSga3C+Zqo94CApvfxo28TzrzoM/XIyda3hrQcMzkW010onR1tbM3OgBW0OU8e8U1vU8686ALEwkKutxe5rm9ZyFIFibVJruwKgsLW01qiqwZSVIAIJJFAcYdfM1UZjCcq6jjrRt6nnXnQJgXe6DMLcRrQQSNIQjBbGiDDrbtNQYwyupKkAHUkUzvE8686AJkMRKKBYcL1xXaU5G0B8K5KGeRmUEjuI9qkQKyBmBUDvItQF6OPM1DMjRkotrDxo+8TzrzpaQFnYqCQTxAvQXVmmYITYcdKucOvmahw3SS7DKLcTpR96nnXnQAMrISotYG1dUmY5W0sL3FDdWLsQrEEkg2q8N0clxlFra6UBOjr5m50PfMugA08aPvU8686VZWvopI9BQEW85IbTLwIq/R18zc6pB1C2cZb8L6Ubep5150CdHwn4virdHX151SQ7lupfreNAd+yfake6i75ybaWOlF6Olra86CYbst71eX7b/lNBdjC1k4HXWq71nIU2s2h08aAdM4b7fzU6Ovrzobs0JyodOOutAacf0mpQcBRN40hCE6H0ovR19edB3D/aHuf81MR9pvihM7RMUU6D0+aiu0rBGIsfCgEKbg+yvtVRAoN9edDMhjJReC6a0BMT2Pmlu+iqxmbI+o46aUTo6evOgvF9tfYUPFdlfzftQ96yEqLWXQaV1CZmyvwGumlAKnU7I9hQ+jr686EZnBtcW9qC+K/B/PCgUZP6zdc9nhar9HX150BjwpbFdpfY1KlAEcR70/UqUCuI7Y/LQ07a/mFdqUDtKYj7nwKlSgrF91fenRwqVKBOf7rfzuqQfeWpUoHKSl+63vUqUFsP934ps1KlAi/bb8xomG+4fy1KlA1SLdo+9SpQFw3FvimalSg//9k="); */
+/* list-style: disc inside url("image.png"); */
+/* list-style-type: "mankey"; 
+} */
+ nav ul li {
+    padding: 25px;
+ }
+  nav ul  {
+    /* padding: 25px; */
+        list-style: none;
+    
+        /* list-style-type: upper-latin; */
+       
+        border: 2px black solid;
+        
+display:flex ;
+}
+</style>
+
+<body>
+    <nav>
+        <ul>
+            <li>home</li>
+            <li>abaout</li>
+            <li>contact</li>
+        </ul>
+    </nav>
+</body>
+
+</html>
