@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root{   
+--var :black;
+--color:red;}
+    *{
+        padding: 0;
+        margin: 0;
+    }
+     .box{
+        background-color: rebeccapurple;
+     }
+    ul{
+        display: flex;
+        padding: 10px;
+    }
+   li {
+    padding: 3px;
+    margin: 10px;
+    border: 2px solid var(--color, green); /* Corrected custom property name */
+    border-radius: 50px;
+    list-style: none;
+    cursor: pointer;
+}
+
+li:hover,li:first-child:hover {
+    border: 2px solid rgb(255, 255, 255); /* Removed invalid var() */
+    cursor: pointer;
+}
+
+        li:first-child{
+            border: 2px solid var(--var,rgb(0, 183, 255));
+
+        }
+</style>
+<body>
+    <div class="box">
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About</li>
+            <li>Main</li>
+        </ul>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam blanditiis hic, libero amet cum temporibus voluptate? Aperiam tempora iure necessitatibus eligendi distinctio, assumenda dolorem voluptatibus id accusantium nisi ratione magni!</p>
+    </div>
+</body>
+</html>
