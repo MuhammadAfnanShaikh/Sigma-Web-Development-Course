@@ -14,40 +14,49 @@
         margin: 0;
     }
      .box{
-        background-color: rebeccapurple;
+        background-color: green;
      }
     ul{
-        display: flex;
-        padding: 10px;
+        /* display: flex; */
+        padding: 30px;
     }
    li {
-    padding: 3px;
+    display: inline;
+    padding: 10px;
     margin: 10px;
+    
     border: 2px solid var(--color, green); /* Corrected custom property name */
     border-radius: 50px;
     list-style: none;
     cursor: pointer;
 }
 
-li:hover,li:first-child:hover {
+a:hover,li:first-child:hover {
     border: 2px solid rgb(255, 255, 255); /* Removed invalid var() */
     cursor: pointer;
 }
 
         li:first-child{
             border: 2px solid var(--var,rgb(0, 183, 255));
-
+        }
+        a{
+            color: aqua;
         }
 </style>
 <body>
-    <div class="box">
+    <header>
+        <nav class="box">
+          <div >
         <ul>
-            <li>Home</li>
-            <li>Contact</li>
-            <li>About</li>
-            <li>Main</li>
+            <li><a href="C:\Users\AFNAN\OneDrive\Desktop\Sigma Web Development Course\Sigma-Web-Development-Course">Home</a></li>
+            <li><a href="/">Contact</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Main</a></li>
         </ul>
-    </div>
+    </div>  
+        </nav>
+    </header>
+    
     <div>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam blanditiis hic, libero amet cum temporibus voluptate? Aperiam tempora iure necessitatibus eligendi distinctio, assumenda dolorem voluptatibus id accusantium nisi ratione magni!</p>
     </div>
